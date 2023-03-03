@@ -1,0 +1,43 @@
+package com.arcesi.banque.exceptions;
+
+public enum ErrorsCodes {
+
+	EMPLOYE_NOT_FOUND(1000),
+	EMPLOYE_NOT_VALID(1001),
+	
+	CARTEBANCAIRE_NOT_FOUND(2000),
+	
+	RIBCOMPTE_NOT_VALID(2001),
+	
+	CLIENT_NOT_FOUND(3000),
+	CLIENT_NOT_VALID(3001),
+	CLIENT_EMAIL_EXIST(3002),
+	CLIENT_DATE_NAISSANCE_NOT_VALID(3003),
+	
+	ETABLISSEMENT_NOT_FOUND(4000),
+	
+	COMPTE_BANCAIRE_NOT_FOUND(5000),
+	
+	GROUPS_FOUND(6000),
+	
+	 USERS_NOT_FOUND(7000),
+	USER_NOT_VALID(7001),
+	
+	
+	
+	ROLE_NOT_FOUND(12000),
+	
+	UTILISATEUR_NOT_FOUND(13000),
+	UTILISATEUR_NOT_VALID(13001);
+	
+	private int code;
+	
+	private ErrorsCodes(int code) {
+		this.code=code;
+	}
+
+	public int getCode() {
+		return code;
+	}
+
+}
