@@ -97,7 +97,7 @@ public class JddTest implements CommandLineRunner {
 				.telephoneEtablissement("0625491640").faxEtablissement("0121201214").codeGuiche("00040")
 				.libelleEtablissement("Banque Tibari Nouvelle Génération").build();
 		
-		EtablissementBean etablissementSavednew = etablissementRepository.save(newEtablissement1);
+		EtablissementBean etablissementSavednew = etablissementRepository.save(newEtablissementTest);
 		//insertion des groupes
 		//ajouter des groupes
 		ajouterLesGroupes();
