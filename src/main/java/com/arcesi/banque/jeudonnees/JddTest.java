@@ -90,14 +90,14 @@ public class JddTest implements CommandLineRunner {
 				.libelleEtablissement("Banque Tibari Nouvelle Génération").build();
 		EtablissementBean etablissementSaved = etablissementRepository.save(newEtablissement);
         
-		EtablissementBean newEtablissementTestee = EtablissementBean.builder().codeEtablissement("10099")
+		EtablissementBean newEtablissementTeste = EtablissementBean.builder().codeEtablissement("10099")
 				.createdAt(Instant.now()).updatedAt(null)
 				.codeEtablissementUnique(UUID.randomUUID().toString().replace("-", ""))
 				.domiciliation("07 RUE PEGUY 75006 PARIS ").emailEtablissement("newbanqueenligne@gmail.com")
 				.telephoneEtablissement("0625491640").faxEtablissement("0121201214").codeGuiche("00040")
 				.libelleEtablissement("Banque Tibari Nouvelle Génération").build();
 		
-		EtablissementBean etablissementSavednew = etablissementRepository.save(newEtablissementTestee);
+		EtablissementBean etablissementSavednew = etablissementRepository.save(newEtablissementTeste);
 		//insertion des groupes
 		//ajouter des groupes
 		ajouterLesGroupes();
