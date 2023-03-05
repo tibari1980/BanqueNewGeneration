@@ -117,10 +117,7 @@ public class JddTest implements CommandLineRunner {
 		  //RoleBean roleClient=roleRepository.findRoleBeanByRoleName("CLIENT");
 		  RoleBean roleEmpl=roleRepository.findRoleBeanByRoleName(AppUserRole.EMPLOYE.getId());
 		  RoleBean roleAdmi=roleRepository.findRoleBeanByRoleName(AppUserRole.ADMINISTRATEUR.getId());
-		  //ube.getRoleBeans().addAll(Arrays.asList(roleClient,roleEmpl));
-		  //ube.getRoleBeans().add(roleClient);
-		 
-		  //userRepository.saveAndFlush(ube);
+		  
 		  ube.getRoleBeans().add(roleEmpl);
 		   userRepository.saveAndFlush(ube);
 		  //ube.getRoleBeans().add(roleAdmi);
